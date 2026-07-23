@@ -204,20 +204,6 @@ salesdashboard.png
 
 ---
 
-# 📊 Model Performance
-
-| Model | Metric |
-|---------|------------|
-| Prophet | MAPE |
-| LSTM | RMSE |
-| Hybrid | MAE |
-| Churn Model | Accuracy |
-| Churn Model | Precision |
-| Churn Model | Recall |
-| Churn Model | F1 Score |
-
-*(Update these values with your final evaluation results.)*
-
 ---
 
 # 🚀 Installation
