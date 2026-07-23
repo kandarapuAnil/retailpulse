@@ -1,0 +1,747 @@
+/* ==========================================================
+   RetailPulse AI
+   Executive Dashboard Theme
+========================================================== */
+
+
+/* MAIN BACKGROUND */
+
+.stApp {
+
+    background:
+    linear-gradient(
+        135deg,
+        #020617,
+        #0F172A,
+        #111827
+    );
+
+    color:white;
+
+}
+
+
+
+/* REMOVE STREAMLIT DEFAULT SPACE */
+
+.block-container {
+
+    padding-top:2rem;
+
+    padding-bottom:3rem;
+
+    max-width:1400px;
+
+}
+
+
+
+/* GLOBAL TEXT */
+
+h1,h2,h3,h4 {
+
+    color:#F8FAFC !important;
+
+    font-family:
+    "Inter",
+    sans-serif;
+
+}
+
+
+p,span,label {
+
+    color:#CBD5E1;
+
+}
+
+
+
+/* ==========================================================
+   HERO BANNER
+========================================================== */
+
+
+.banner {
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(37,99,235,0.35),
+        rgba(139,92,246,0.25)
+    );
+
+
+    border:
+
+    1px solid rgba(255,255,255,0.15);
+
+
+    padding:45px;
+
+
+    border-radius:28px;
+
+
+    margin-bottom:30px;
+
+
+    backdrop-filter:
+
+    blur(18px);
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+.banner h1 {
+
+
+    font-size:48px;
+
+    font-weight:900;
+
+}
+
+
+.banner p {
+
+
+    font-size:22px;
+
+    color:#CBD5E1;
+
+}
+
+
+
+/* ==========================================================
+   METRIC CARDS
+========================================================== */
+
+
+.metric-card {
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #1E293B,
+        #334155
+    );
+
+
+    padding:25px;
+
+
+    border-radius:22px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+    min-height:150px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.3);
+
+
+    transition:.3s;
+
+}
+
+
+.metric-card:hover {
+
+
+    transform:
+
+    translateY(-5px);
+
+
+    border-color:
+
+    #3B82F6;
+
+}
+
+
+
+/* METRIC TEXT */
+
+
+.metric-title {
+
+
+    color:#94A3B8;
+
+
+    font-size:16px;
+
+
+}
+
+
+.metric-value {
+
+
+    color:white;
+
+
+    font: size 28px;
+
+
+    font-weight:800;
+
+
+}
+
+
+.metric-change {
+
+
+    color:#10B981;
+
+
+    margin-top:8px;
+
+
+}
+
+
+
+/* ==========================================================
+   STREAMLIT METRICS
+========================================================== */
+
+
+[data-testid="stMetric"] {
+
+
+    background:
+
+    linear-gradient(
+        145deg,
+        #1E293B,
+        #334155
+    );
+
+
+    padding:18px;
+
+
+    border-radius:18px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+
+}
+
+
+
+[data-testid="stMetricValue"] {
+
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+
+
+/* ==========================================================
+   INFO / SUCCESS BOX
+========================================================== */
+
+
+.stAlert {
+
+
+    background:
+
+    rgba(30,41,59,.85);
+
+
+    border-radius:18px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.12);
+
+}
+
+
+
+/* ==========================================================
+   PLOTLY CONTAINERS
+========================================================== */
+
+
+iframe {
+
+
+    border-radius:20px;
+
+}
+
+
+
+/* ==========================================================
+   DATA TABLE
+========================================================== */
+
+
+[data-testid="stDataFrame"] {
+
+
+    background:#1E293B;
+
+
+    border-radius:20px;
+
+
+    padding:10px;
+
+
+}
+
+
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+
+section[data-testid="stSidebar"] {
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        #020617,
+
+        #1E293B
+
+    );
+
+
+}
+
+
+section[data-testid="stSidebar"] * {
+
+
+    color:white !important;
+
+}
+
+
+
+/* Sidebar Buttons */
+
+
+section[data-testid="stSidebar"] button {
+
+
+    border-radius:12px;
+
+
+}
+
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+
+.stButton button,
+
+
+.stDownloadButton button {
+
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #2563EB,
+
+        #7C3AED
+
+    );
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:14px;
+
+
+    padding:12px 22px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+.stButton button:hover,
+
+
+.stDownloadButton button:hover {
+
+
+    transform:
+
+    translateY(-2px);
+
+
+}
+
+
+
+/* ==========================================================
+   DIVIDERS
+========================================================== */
+
+
+hr {
+
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+
+.footer {
+
+
+    text-align:center;
+
+
+    padding:25px;
+
+
+    color:#94A3B8;
+
+
+    font-size:14px;
+
+}
+
+
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+
+::-webkit-scrollbar {
+
+
+    width:8px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+
+    background:#020617;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+
+    background:#475569;
+
+    border-radius:10px;
+
+}
+/* ==========================================================
+   REMOVE STREAMLIT TOP BLACK HEADER
+========================================================== */
+
+/* Hide Streamlit top toolbar */
+header[data-testid="stHeader"] {
+
+    background: transparent !important;
+
+    height: 0px;
+
+}
+
+
+/* Remove top empty space */
+
+.block-container {
+
+    padding-top: 0rem !important;
+
+}
+
+
+/* Hide Deploy / Menu toolbar */
+
+[data-testid="stToolbar"] {
+
+    display:none !important;
+
+}
+
+
+/* Remove top decoration line */
+
+[data-testid="stDecoration"] {
+
+    display:none !important;
+
+}
+
+
+/* Full height app */
+
+.stApp {
+
+    margin-top:0px !important;
+
+}
+/* ==========================================================
+   SALES SNAPSHOT CARDS
+========================================================== */
+
+.snapshot-card {
+
+    min-height:260px;
+
+    height:auto;
+
+    background:
+    linear-gradient(
+        145deg,
+        #1E293B,
+        #334155
+    );
+
+    border-radius:22px;
+
+    padding:25px;
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.3);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    overflow:hidden;
+
+}
+
+
+.snapshot-card h3 {
+
+    color:#E2E8F0;
+
+    font-size:19px;
+
+    margin-bottom:12px;
+
+}
+
+
+.snapshot-card h2 {
+
+    color:white;
+
+    font-size:26px;
+
+    margin:8px 0;
+
+    line-height:1.2;
+
+}
+
+
+.snapshot-card p {
+
+    color:#94A3B8;
+
+    font-size:15px;
+
+    line-height:1.5;
+
+    margin:6px 0;
+
+}
+/* ==========================================================
+   SALES SNAPSHOT CARDS - COMPACT VERSION
+========================================================== */
+
+.snapshot-card {
+
+    min-height:230px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #1E293B,
+        #334155
+    );
+
+    border-radius:22px;
+
+    padding:20px;
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.3);
+
+}
+
+
+
+/* Title */
+
+.snapshot-card h3 {
+
+    color:#E2E8F0;
+
+    font-size:18px;
+
+    margin:0 0 8px 0;
+
+    line-height:1.1;
+
+}
+
+
+
+/* Main Value */
+
+.snapshot-card h2,
+.snapshot-card h3 {
+
+    line-height:1.1;
+
+}
+
+
+
+/* Paragraph text */
+
+.snapshot-card p {
+
+    color:#94A3B8;
+
+    font-size:14px;
+
+    line-height:1.25;
+
+    margin:4px 0;
+
+}
+/* ==========================================================
+   HERO STATUS BADGES
+========================================================== */
+
+
+.header-status {
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:-55px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.online-badge {
+
+    background:#064E3B;
+
+    color:#34D399;
+
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    border:1px solid #10B981;
+
+}
+
+
+
+.date-badge {
+
+    background:#1E293B;
+
+    color:#E2E8F0;
+
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+}
