@@ -204,6 +204,23 @@ salesdashboard.png
 
 ---
 
+HEAD
+=======
+# 📊 Model Performance
+
+| Model | Metric |
+|---------|------------|
+| Prophet | MAPE 22.54479225996598|
+| LSTM | RMSE 24963.446142322988|
+| Hybrid | MAE 12901.987603808277|
+| Churn Model | Accuracy 99.86%|
+| Churn Model | Precision 99.86%|
+| Churn Model | Recall 99.72%|
+| Churn Model | F1 Score 99.79%|
+
+
+
+>>>>>>> cea6b2f (Update dashboard data and fix deployment)
 ---
 
 # 🚀 Installation

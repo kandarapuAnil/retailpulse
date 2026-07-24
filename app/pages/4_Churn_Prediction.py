@@ -618,31 +618,20 @@ risk = (
 )
 
 
+customer_col = "Customer ID" if "Customer ID" in risk.columns else "CustomerID"
 
 st.dataframe(
-
     risk[
-
         [
-
-            "Customer ID",
-
+            customer_col,
             "Recency",
-
             "Frequency",
-
             "Monetary",
-
             "Probability"
-
         ]
-
     ],
-
     use_container_width=True,
-
     height=400
-
 )
 
 
