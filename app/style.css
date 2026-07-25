@@ -499,50 +499,44 @@ hr {
 /* ==========================================================
    REMOVE STREAMLIT TOP BLACK HEADER
 ========================================================== */
+/* ==========================================================
+   STREAMLIT HEADER (Keep Sidebar Toggle Visible)
+========================================================== */
 
-/* Hide Streamlit top toolbar */
+/* Keep the header visible so the sidebar arrow works */
 header[data-testid="stHeader"] {
-
     background: transparent !important;
-
-    height: 0px;
-
+    height: 3.5rem !important;
+    border-bottom: none !important;
+    z-index: 999999 !important;
 }
 
-
-/* Remove top empty space */
-
-.block-container {
-
-    padding-top: 0rem !important;
-
-}
-
-
-/* Hide Deploy / Menu toolbar */
-
+/* Hide only the toolbar icons (Deploy, Menu, etc.) */
 [data-testid="stToolbar"] {
-
-    display:none !important;
-
+    display: none !important;
 }
 
-
-/* Remove top decoration line */
-
+/* Remove the top decoration */
 [data-testid="stDecoration"] {
-
-    display:none !important;
-
+    display: none !important;
 }
 
+/* Keep the sidebar toggle button visible */
+button[kind="header"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: fixed !important;
+    top: 0.6rem !important;
+    left: 0.6rem !important;
+    z-index: 1000000 !important;
+    background: rgba(30, 41, 59, 0.9) !important;
+    border-radius: 10px !important;
+}
 
-/* Full height app */
-
-.stApp {
-
-    margin-top:0px !important;
-
+/* Reduce the top spacing */
+.block-container {
+    padding-top: 0.5rem !important;
 }
 /* ==========================================================
    SALES SNAPSHOT CARDS
