@@ -40,7 +40,36 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+st.markdown("""
+<style>
 
+/* Keep sidebar toggle button visible */
+button[kind="header"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 999999 !important;
+}
+
+/* Keep Streamlit header visible */
+header[data-testid="stHeader"] {
+    background: transparent;
+    height: 3.5rem;
+    z-index: 999998;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    z-index: 999997;
+}
+
+/* Prevent your CSS from covering the header */
+.main .block-container {
+    padding-top: 1rem;
+}
+
+</style>
+""", unsafe_allow_html=True)
 # ----------------------------------------------------------
 # LOAD CSS
 # ----------------------------------------------------------
