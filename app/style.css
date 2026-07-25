@@ -497,48 +497,6 @@ hr {
 
 }
 /* ==========================================================
-   REMOVE STREAMLIT TOP BLACK HEADER
-========================================================== */
-/* ==========================================================
-   STREAMLIT HEADER (Keep Sidebar Toggle Visible)
-========================================================== */
-
-/* Keep the header visible so the sidebar arrow works */
-header[data-testid="stHeader"] {
-    background: transparent !important;
-    height: 3.5rem !important;
-    border-bottom: none !important;
-    z-index: 999999 !important;
-}
-
-/* Hide only the toolbar icons (Deploy, Menu, etc.) */
-[data-testid="stToolbar"] {
-    display: none !important;
-}
-
-/* Remove the top decoration */
-[data-testid="stDecoration"] {
-    display: none !important;
-}
-
-/* Keep the sidebar toggle button visible */
-button[kind="header"] {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    position: fixed !important;
-    top: 0.6rem !important;
-    left: 0.6rem !important;
-    z-index: 1000000 !important;
-    background: rgba(30, 41, 59, 0.9) !important;
-    border-radius: 10px !important;
-}
-
-/* Reduce the top spacing */
-.block-container {
-    padding-top: 0.5rem !important;
-}
-/* ==========================================================
    SALES SNAPSHOT CARDS
 ========================================================== */
 
@@ -738,4 +696,46 @@ button[kind="header"] {
 
     border:1px solid rgba(255,255,255,0.15);
 
+}
+/* ==========================================================
+   SIDEBAR TOGGLE FIX
+========================================================== */
+
+/* Keep Streamlit header visible */
+header[data-testid="stHeader"]{
+    background: transparent !important;
+    height: 3.5rem !important;
+    z-index: 999990 !important;
+}
+
+/* Sidebar toggle button */
+[data-testid="collapsedControl"]{
+    position: fixed !important;
+    top: 10px !important;
+    left: 10px !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    z-index: 9999999 !important;
+
+    background: rgba(30,41,59,.95) !important;
+    border-radius: 10px !important;
+
+    pointer-events: auto !important;
+}
+
+/* Prevent other elements from covering the button */
+.banner,
+.header-status,
+.snapshot-card{
+    position: relative;
+    z-index: 1 !important;
 }
