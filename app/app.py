@@ -3,27 +3,6 @@
 # Executive Retail Analytics Dashboard
 # Version 3.0
 # ==========================================================
-import streamlit as st
-
-st.write("Hello")
-
-import plotly
-st.write(plotly.__version__)
-
-import plotly.express as px
-st.write("Plotly Express imported successfully")
-import sys
-import os
-
-print("Python:", sys.version)
-print("Current directory:", os.getcwd())
-
-try:
-    import plotly
-    print("Plotly version:", plotly.__version__)
-    print("Plotly location:", plotly.__file__)
-except Exception as e:
-    print("Plotly import failed:", e)
 import os
 from datetime import datetime
 
